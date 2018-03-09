@@ -1,0 +1,63 @@
+{{define "title"}}Jumbo - Track Stats{{end}}
+{{define "content"}}
+
+<section class="hero is-success is-fullheight has-text-centered" id="stats">
+    <!-- <div class="hero-head">
+    </div> -->
+    <div class="hero-body">
+        <div class="container">
+            <!-- <h2 class="subtitle is-6"><span class="pink">Remember</span> your games</h2> -->
+            <h4 class="title is-4">{{.GameName}} <span>Stats</span></h2>
+            
+            <table class="table is-striped is-fullwidth is-narrow">
+                <thead>
+                    <th>Name</th>
+                    <th>G</th>
+                    <th>W</th>
+                    <th>T</th>
+                    <th>L</th>
+                    <th>Win%</th>
+                </thead>
+                <tbody>
+                    {{range .Stats}}
+                    <tr>
+                        <td>{{.Name}}</td>
+                        <td>{{.Games}}</td>
+                        <td>{{.Wins}}</td>
+                        <td>{{.Ties}}</td>
+                        <td>{{.Losses}}</td>
+                        <td>{{.WinPercentage | FormatPercentage}}%</td>
+                    </tr>
+                    {{end}}
+                </tbody>
+            </table>
+            
+            
+            <h4 class="title is-4">Latest games</h2>
+            
+            {{range $i, $e := .Matches}}
+            {{if lt $i 3}}
+            <div class="match-card">
+                <span class="added">{{.Added | FormatDate}}</span>
+                <span class="player">{{.Winner}} </span>
+                <span class="vs"> vs. </span>
+                <span class="player">{{.Loser}} </span>
+            </div>
+            {{end}}
+            {{end}}
+
+                <h3>{{.Winner}} - {{.Loser}} {{.Added | FormatDate}} {{.ID}}</h3>
+            <a class="button backButton" href="/">Back</a>
+        </div>
+    </div>
+</section>
+
+<!-- <section class="hero is-success is-fullheight has-text-centered" id="matches">
+    <div class="hero-body">
+        <div class="container"> -->
+        <!-- </div>
+    </div>
+</section> -->
+<!-- <h1>Search results for {{.GameName}}</h1>
+
+{{end}}

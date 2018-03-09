@@ -1,0 +1,175 @@
+{{define "title"}}Jumbo{{end}}
+{{define "content"}}
+
+<section class="hero is-success is-fullheight has-text-centered" id="createMatchSection">
+
+    
+    <!-- <div class="hero-head">
+    </div> -->
+    <div class="hero-body">
+        <div class="container">
+            
+            <!-- {{if .Message}}
+            <div class="notification is-info" id="notification">
+                <button class="delete" id="removeNotification"></button>
+                {{.Message}}
+            </div>
+            {{end}} -->
+
+            <!-- <h2 class="title is-5">Add new game</h2> -->
+            <img class="logo" src="/static/images/logo.png" width="64" height="64" alt="Logo">
+            <h1 class="title is-3">Jumbo</h1>
+            <h2 class="subtitle is-6">Keep <span class="pink">track</span> of your games</h2>
+            
+            <form id="createMatch" action="/api/create/match" method="POST">
+
+                <!-- Game -->
+                <div class="field column is-4 is-offset-4">
+                    <div class="control has-addons has-addons-centered">
+                        <div class="select is-fullwidth">
+                            <select name="gameName" id="gameName">
+                                {{range .Games}}
+                                <option value="{{.Name}}">{{.Name}}</option>
+                                {{end}}
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Winner -->
+                <div class="field column is-4 is-offset-4">
+                    <div class="control has-addons has-addons-centered">
+                        <div class="select is-fullwidth">
+                            <select name="winner" id="winner">
+                                <option selected disabled>Winner</option>
+                                {{range .Players}}
+                                    <option value="{{.Name}}">{{.Name}}</option>
+                                {{end}}
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Loser -->
+                <div class="field column is-4 is-offset-4">
+                    <div class="control has-addons has-addons-centered">
+                        <div class="select is-fullwidth">
+                            <select name="loser" id="loser">
+                                <option selected disabled>Loser</option>
+                                {{range .Players}}
+                                    <option value="{{.Name}}">{{.Name}}</option>
+                                {{end}}
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comment -->
+                <div class="field column is-4 is-offset-4">
+                    <div class="control has-addons has-addons-centered">
+                        <input type="text" name="comment" class="input" id="comment" placeholder="Comment">
+                    </div>
+                </div>
+
+                <div class="column is-4 is-offset-4">
+                    <label class="checkbox">
+                        <input type="checkbox" name="isTie" id="isTie" value="tie"> Tie
+                    </label>
+                </div>
+
+                <div class="field column is-4 is-offset-4">
+                    <p class="control has-addons has-addons-centered">
+                        <input type="submit" id="createMatchButton" class="button" value="Add">
+                    </p>
+                </div>
+
+                </div>
+                
+            </form>
+
+        </div>
+    </div>
+    <!-- <div class="hero-foot">
+        <div class="container">
+            foot with container
+        </div>
+    </div> -->
+</section>
+
+
+
+<section class="hero is-success is-fullheight has-text-centered" id="searchSection">
+    <div class="hero-body">
+        <div class="container">
+            <h4 class="title is-4">Search <span class="pink">games</span></h2>
+            <form id="search" action="/api/search" method="POST">
+
+                <div class="columns is-multiline">
+                
+                    <!-- Game -->
+                    <div class="field column is-4 is-offset-4">
+                        <div class="control has-addons has-addons-centered">
+                            <div class="select is-fullwidth">
+                                <select name="gameName">
+                                    {{range .Games}}
+                                    <option value="{{.Name}}">{{.Name}}</option>
+                                    {{end}}
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Winner -->
+                    <div class="field column is-4 is-offset-4">
+                        <div class="control has-addons has-addons-centered">
+                            <div class="select is-fullwidth">
+                                <select name="player1">
+                                    <option selected disabled>Player 1</option>
+                                    {{range .Players}}
+                                    <option value="{{.Name}}">{{.Name}}</option>
+                                    {{end}}
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Loser -->
+                    <div class="field column is-4 is-offset-4">
+                        <div class="control has-addons has-addons-centered">
+                            <div class="select is-fullwidth">
+                                <select name="player2">
+                                    <option selected disabled>Player 2</option>
+                                    {{range .Players}}
+                                    <option value="{{.Name}}">{{.Name}}</option>
+                                    {{end}}
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Limit Games -->
+                    <div class="field column is-4 is-offset-4">
+                        <div class="control has-addons has-addons-centered">
+                            <input type="text" name="limitGames" class="input" placeholder="Limit games">
+                        </div>
+                    </div>
+
+                    <!-- Limit days -->
+                    <div class="field column is-4 is-offset-4">
+                        <div class="control has-addons has-addons-centered">
+                            <input type="text" name="limitDays" class="input" placeholder="Limit days">
+                        </div>
+                    </div>
+
+                    <div class="field column is-4 is-offset-4">
+                        <p class="control has-addons has-addons-centered">
+                            <input type="submit" class="button" value="Search">
+                        </p>
+                    </div>
+
+
+            </form>
+        </div>
+    </div>
+</section>
+{{end}}

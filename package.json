@@ -1,0 +1,7 @@
+{
+    "name": "jumbo",
+    "version": "0.1.0",
+    "dependencies": {
+        "bulma": "^0.6.2"
+    }
+}

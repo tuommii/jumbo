@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="793.70081"
+   height="1122.5197"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   sodipodi:docname="logo.svg"
+   inkscape:export-filename="C:\Users\tuomm\go\src\github.com\tuommii\jumbo\favicon.png"
+   inkscape:export-xdpi="95.135544"
+   inkscape:export-ydpi="95.135544">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2"
+     inkscape:cx="122.61682"
+     inkscape:cy="-7.1222518"
+     inkscape:document-units="mm"
+     inkscape:current-layer="svg8"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-bbox="false"
+     inkscape:snap-grids="true"
+     showguides="true"
+     inkscape:snap-intersection-paths="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid837" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <ellipse
+     style="fill:#00ff00;fill-opacity:1;stroke:#c7ff8e;stroke-width:1.52989018;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:6.79999971;stroke-dasharray:none;stroke-opacity:1"
+     id="path818"
+     cx="44.902206"
+     cy="280.11005"
+     rx="7.6378226"
+     ry="7.7276797"
+     inkscape:export-filename="C:\Users\tuomm\go\src\github.com\tuommii\jumbo\static\images\logo.png"
+     inkscape:export-xdpi="95"
+     inkscape:export-ydpi="95" />
+  <path
+     style="fill:none;stroke:#c7ff8e;stroke-width:1.52989018;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:6.79999971;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+     d="m 47.392601,287.0206 v -1.62061 c 2.46562,-1.59953 2.118474,-3.77453 1.149013,-3.7398 -8.878893,0.31806 -6.868597,-9.97753 -1.372477,-8.87636"
+     id="path820"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccsc"
+     inkscape:export-filename="C:\Users\tuomm\go\src\github.com\tuommii\jumbo\static\images\logo.png"
+     inkscape:export-xdpi="95"
+     inkscape:export-ydpi="95" />
+  <path
+     style="fill:none;stroke:#c7ff8e;stroke-width:1.52989018;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:6.79999971;stroke-dasharray:none;stroke-opacity:1"
+     d="m 43.75845,287.62318 v -2.22319"
+     id="path830"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cc"
+     inkscape:export-filename="C:\Users\tuomm\go\src\github.com\tuommii\jumbo\static\images\logo.png"
+     inkscape:export-xdpi="95"
+     inkscape:export-ydpi="95" />
+  <path
+     style="fill:#c7ff8e;fill-opacity:1;stroke:none;stroke-width:0.61783367;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:12.39999962;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+     d="m 48.950771,276.50431 a 1.0668095,0.98622251 0 0 1 -1.066806,0.98622 1.0668095,0.98622251 0 0 1 -1.066811,-0.98622 1.0668095,0.98622251 0 0 1 1.066811,-0.98623 1.0668095,0.98622251 0 0 1 1.066806,0.98623 z"
+     id="path928"
+     inkscape:connector-curvature="0"
+     inkscape:export-filename="C:\Users\tuomm\go\src\github.com\tuommii\jumbo\static\images\logo.png"
+     inkscape:export-xdpi="95"
+     inkscape:export-ydpi="95" />
+</svg>

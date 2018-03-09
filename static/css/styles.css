@@ -1,0 +1,120 @@
+body {
+    background: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, Ubuntu, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+#notification {
+    overflow: hidden;
+    height: 1%;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.logo {
+    padding-bottom: 0px;
+}
+
+#createMatchSection {
+    background: #271b68;
+    color: #fff;
+    border-bottom: 1px solid #75f;
+}
+
+.control.has-addons.has-addons-centered {
+    justify-content: center;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.field:not(:last-child) {
+    margin-bottom: 0.0rem;
+}
+
+h1.title {
+    padding-bottom: 2px;
+}
+
+.pink {
+    color: #ff79aa;
+}
+
+input.button, .button {
+    color: #fff !important;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    border-radius: 4px;
+    background: #0073e8;
+    background: linear-gradient(135deg, #00bec7, #0073e8);
+    transition: all 0.2s ease;
+    width: 200px;
+}
+
+.button:hover {
+    border: 1px solid rgba(0, 0, 0, 0.85);
+    box-shadow: 0 10px 40px -4px rgba(0, 0, 0, 0.4);
+}
+
+label.checkbox:hover {
+    color: yellowgreen;
+}
+
+#searchSection {
+    background: #262046;
+}
+
+
+
+#stats {
+    background: #1d144d;
+}
+
+h4.title span {
+    color: #ff79aa;
+}
+.table {
+    background: #0d0923;
+    color: #f6f7fd;
+}
+
+.table thead td, .table thead th {
+    border-width: 0 0 2px;
+    border-color: hsla(227, 32%, 42%, 0.8);
+    color: #f6f7fd;
+    background: #1d144d;
+}
+.table td, .table th {
+    border:1px solid hsla(227, 32%, 42%, 0.8);
+}
+
+.table.is-striped tbody tr:not(.is-selected):nth-child(even) {
+    background-color: #432e83;
+}
+
+.table.is-striped tbody tr:not(.is-selected):nth-child(odd) {
+    background-color: #2d2656;
+}
+
+.table.is-striped tbody tr.is-selected {
+    background-color: blue;
+}
+
+.match-card {
+    padding: 0.5em;
+    background: #4466e0;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid #0d0923;
+    border-radius: 4px;
+    box-shadow: 0 10px 40px -4px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+.player {
+    font-weight: bold;
+}
+
+.added {
+    margin-right: 1rem;
+}

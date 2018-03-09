@@ -1,0 +1,27 @@
+{{define "base"}}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{{block "title" .}}{{end}}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" type="text/css" media="screen" href="/static/css/bulma.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="/static/css/styles.css" />
+        <link rel="icon" href="favicon.png" type="image/x-icon" />
+        <link rel="manifest" href="/static/manifest.json">
+        <link rel="apple-touch-icon" href="/static/images/icon-48.png">
+        <link rel="apple-touch-icon" sizes="96x96" href="/static/images/icon-96.png">
+        <link rel="apple-touch-icon" sizes="196x196" href="/static/images/icon-196.png">
+        <link rel="icon" href="favicon.png" sizes="32x32">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+        <!-- block assets -->
+    </head>
+    <body>
+        {{template "content" .}}
+        <script src="/static/js/main.js"></script>
+        <!-- {{block "js" .}} {{end}} -->
+    </body>
+    </html>
+{{end}}

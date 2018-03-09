@@ -1,0 +1,31 @@
+{
+    "name": "Jumbo",
+    "short_name": "Jumbo",
+    "display": "standalone",
+    "description": "Stats tracker",
+    "theme_color": "#a040a0",
+    "background_color": "#EEEEEE",
+    "lang": "en-Us",
+    "icons": [
+        {
+            "src": "/static/images/icon-48.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "/static/images/icon-96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "/static/images/icon-144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "/static/images/icon-196.png",            
+            "sizes": "196x196",
+            "type": "image/png"
+        }
+    ]
+}
