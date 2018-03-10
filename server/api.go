@@ -11,11 +11,8 @@ import (
 )
 
 func (s *Server) apiHome(w http.ResponseWriter, r *http.Request) {
-	session, err := s.cookies.Get(r, "mysession")
-	if err != nil {
-		http.Error(w, err.Error(), http.StatusInternalServerError)
-		return
-	}
+	// ignore error, new session is always returned
+	session, _ := s.cookies.Get(r, "mysession")
 
 	flashes := session.Flashes()
 	session.Save(r, w)
