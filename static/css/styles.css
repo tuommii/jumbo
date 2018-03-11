@@ -113,8 +113,13 @@ h4.title span {
 
 .player {
     font-weight: bold;
+    text-indent: 5px;
 }
 
-.added {
-    margin-right: 1rem;
+.vs {
+    text-indent: 5px;
+}
+
+.id {
+    text-indent: 10px;
 }
