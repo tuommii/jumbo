@@ -27,14 +27,14 @@ func (s *Server) apiHome(w http.ResponseWriter, r *http.Request) {
 	players, err := s.db.GetPlayers()
 	if err != nil {
 		log.Println(err)
-		http.Error(w, "Database error", http.StatusInternalServerError)
+		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
 
 	games, err := s.db.GetGames()
 	if err != nil {
 		log.Println(err)
-		http.Error(w, "Database error", http.StatusInternalServerError)
+		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
 
@@ -113,7 +113,7 @@ func (s *Server) apiCreatePlayer(w http.ResponseWriter, r *http.Request) {
 	_, err := s.db.CreatePlayer(playerName)
 	if err != nil {
 		log.Println(err)
-		http.Error(w, "Something went wrong", http.StatusInternalServerError)
+		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
 
@@ -131,7 +131,7 @@ func (s *Server) apiCreateGame(w http.ResponseWriter, r *http.Request) {
 	_, err := s.db.CreateGame(gameName)
 	if err != nil {
 		log.Println(err)
-		http.Error(w, "Something went wrong", http.StatusInternalServerError)
+		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
 
@@ -145,16 +145,18 @@ func (s *Server) apiDeleteMatch(w http.ResponseWriter, r *http.Request) {
 	}
 
 	id, err := strconv.Atoi(r.FormValue("id"))
+	log.Println("ID:", id)
 	if err != nil {
 		log.Println(err)
-		http.Error(w, "Something went wrong", http.StatusInternalServerError)
+		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
 
-	_, err = s.db.DeleteMatch(id)
+	num, err := s.db.DeleteMatch(id)
+	log.Println("NUM", num)
 	if err != nil {
 		log.Println(err)
-		http.Error(w, "Something went wrong", http.StatusInternalServerError)
+		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
 
@@ -172,7 +174,7 @@ func (s *Server) apiDeleteGame(w http.ResponseWriter, r *http.Request) {
 	_, err := s.db.DeleteGame(gameName)
 	if err != nil {
 		log.Println(err)
-		http.Error(w, "Something went wrong", http.StatusInternalServerError)
+		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
 
@@ -191,7 +193,7 @@ func (s *Server) apiDeletePlayer(w http.ResponseWriter, r *http.Request) {
 
 	if err != nil {
 		log.Println(err)
-		http.Error(w, "Something went wrong", http.StatusInternalServerError)
+		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
 

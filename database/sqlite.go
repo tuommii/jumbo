@@ -236,7 +236,7 @@ func (db *SQLiteDB) GetMatches(f model.Filter) ([]model.Match, error) {
 
 // DeleteMatch deletes match
 func (db *SQLiteDB) DeleteMatch(id int) (int64, error) {
-	stmt, err := db.Connection.Prepare("DELETE FROM game WHERE id = ?")
+	stmt, err := db.Connection.Prepare("DELETE FROM match WHERE id = ?")
 	if err != nil {
 		return -1, err
 	}
